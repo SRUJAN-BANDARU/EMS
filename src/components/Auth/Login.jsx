@@ -25,7 +25,8 @@ const Login = ({handleLogin}) => {
           }}>
             <input 
             className='text-white outline-none border-2 border-emerald-400 py-4 px-5 text-xl rounded-full bg-transparent placeholder:text-gray-400' type="email" 
-            placeholder='Enter your email' 
+            placeholder='Enter your email'
+            id='email' 
             value={email} 
             onChange={(e) =>{
               setEmail(e.target.value)
@@ -35,6 +36,7 @@ const Login = ({handleLogin}) => {
             className='text-white outline-none border-2 border-emerald-400 py-4 px-5 text-xl rounded-full bg-transparent placeholder:text-gray-400 mt-5' 
             type="password" 
             placeholder='Enter your password' 
+            id='pass'
             value={password} 
             onChange={(e) =>{
               setPassword(e.target.value)
